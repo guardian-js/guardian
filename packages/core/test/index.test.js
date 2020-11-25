@@ -8,7 +8,7 @@ chai.should();
 chai.use(sinonChai);
 
 describe('@guardianjs/core', () => {
-    it('should correctly check routes', () => {
+    it('should correctly guard routes', () => {
         const falseSpy = sinon.spy(() => false);
         const trueSpy = sinon.spy(() => true);
 
