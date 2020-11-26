@@ -22,7 +22,9 @@
     "build": "npm run clean && npm run compile",
     "clean": "rm -rf ./dist",
     "compile": "tsc -d -p tsconfig.build.json",
-    "test": "mocha"
+    "test": "mocha",
+    "test:coverage": "nyc mocha",
+    "report": "nyc report --reporter=text-lcov > coverage.lcov"
   },
   "bugs": {
     "url": "https://github.com/guardian-js/guardian/issues"
