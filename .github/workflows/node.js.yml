@@ -28,4 +28,5 @@ jobs:
     - run: npx lerna bootstrap
     - run: npx lerna run build
     - run: npx lerna run test:coverage
+    - run: npx lerna run report
     - uses: codecov/codecov-action@v1
