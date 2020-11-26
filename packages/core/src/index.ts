@@ -5,16 +5,14 @@ interface RouteItem {
   guard: () => boolean;
 }
 
-let routes: RouteItem[] = [];
+const routes: RouteItem[] = [];
 
 // TODO: change guard: () => boolean
-export function register(route: string, guard: () => boolean) {
-  routes.push(
-    {
-      route: regexparam(route).pattern,
-      guard
-    }
-  );
+export function register(route: string, guard: () => boolean): void {
+  routes.push({
+    route: regexparam(route).pattern,
+    guard,
+  });
 }
 
 export function check(route: string): boolean {
