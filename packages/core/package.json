@@ -4,7 +4,7 @@
   "description": "> TODO: description",
   "author": "Axelen123 <axelakesson05@hotmail.com>",
   "homepage": "https://github.com/guardian-js/guardian#readme",
-  "license": "ISC",
+  "license": "MIT",
   "main": "dist/",
   "types": "dist/",
   "files": [
