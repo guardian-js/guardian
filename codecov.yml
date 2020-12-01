@@ -1,3 +1,14 @@
+coverage:
+  status:
+    project:
+      core:
+        target: auto
+        flags:
+          - core
+      utils:
+        target: auto
+        flags:
+          - utils
 flags:
   core:
     paths:
