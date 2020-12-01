@@ -1,0 +1,9 @@
+flags:
+  core:
+    paths:
+      - core.lcov
+    carryforward: true
+  utils:
+    paths:
+      - utils.lcov
+    carryforward: true
