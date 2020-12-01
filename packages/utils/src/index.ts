@@ -13,6 +13,7 @@ export function wrap(route: string, f: Fn): Fn {
     if (check(route)) {
       return f(...args);
     } else {
+      // TODO: Change this.
       throw new Error('Permission denied');
     }
   };
