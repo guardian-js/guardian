@@ -6,6 +6,7 @@ interface RouteItem {
 }
 
 const routes: RouteItem[] = [];
+export const context = new Map<string, any>();
 
 // TODO: change guard: () => boolean
 export function register(route: string, guard: () => boolean): void {
@@ -16,6 +17,7 @@ export function register(route: string, guard: () => boolean): void {
 }
 
 export function check(route: string): boolean {
+  context.clear();
   for (const item of routes) {
     if (item.route.test(route)) {
       return item.guard();
